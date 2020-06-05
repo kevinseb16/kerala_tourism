@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/titlefragment">
+
+    <fragment
+        android:id="@+id/titlefragment"
+        android:name="com.example.android.kerala_tourism.titlefragment"
+        android:label="Kerala Tourism"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titlefragment_to_monumentfragment"
+            app:destination="@id/monumentfragment" />
+        <action
+            android:id="@+id/action_titlefragment_to_backwatersfragment"
+            app:destination="@id/backwatersfragment" />
+        <action
+            android:id="@+id/action_titlefragment_to_beachesfragment"
+            app:destination="@id/beachesfragment" />
+        <action
+            android:id="@+id/action_titlefragment_to_hillstationfragment"
+            app:destination="@id/hillfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backwatersfragment"
+        android:name="com.example.android.kerala_tourism.backwatersfragment"
+        android:label="Backwaters"
+        tools:layout="@layout/fragment_backwaters">
+        <action
+            android:id="@+id/action_backwatersfragment_pop_including_titlefragment"
+            app:popUpTo="@id/titlefragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/beachesfragment"
+        android:name="com.example.android.kerala_tourism.beachesfragment"
+        android:label="Beaches"
+        tools:layout="@layout/fragment_beaches">
+        <action
+            android:id="@+id/action_beachesfragment_pop_including_titlefragment"
+            app:popUpTo="@id/titlefragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/monumentfragment"
+        android:name="com.example.android.kerala_tourism.monumentfragment"
+        android:label="Monuments"
+        tools:layout="@layout/fragment_monuments">
+        <action
+            android:id="@+id/action_monumentfragment_to_titlefragment"
+            app:popUpTo="@id/titlefragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/hillfragment"
+        android:name="com.example.android.kerala_tourism.hillfragment"
+        android:label="Hill Stations"
+        tools:layout="@layout/fragment_backwaters">
+        <action
+            android:id="@+id/action_hillfragment_pop_including_titlefragment"
+            app:popUpTo="@id/titlefragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

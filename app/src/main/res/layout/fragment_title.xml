@@ -1,0 +1,46 @@
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.TitleFragment">
+
+    <RelativeLayout
+        android:id="@+id/titleConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8BC34A">
+
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:id="@+id/titleImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/nav_header"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_margin="@dimen/horizontal_margin"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="@string/detail"
+            android:layout_below="@id/titleImage"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleImage"
+            app:layout_constraintVertical_bias="0.297">
+
+
+        </TextView>
+
+    </RelativeLayout>
+</layout>

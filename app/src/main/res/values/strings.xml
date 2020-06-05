@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">kerala_tourism</string>
+    <string name="detail">Kerala, a state on India\'s tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It\'s known for its palm-lined beaches and backwaters, a network of canals. Inland are the Western Ghats, mountains whose slopes support tea, coffee and spice plantations as well as wildlife. National parks like Eravikulam and Periyar, plus Wayanad and other sanctuaries, are home to elephants, langur monkeys and tigers.Check Out the various points of Interest in the Dashboard Menu</string>
+    <string name="monuments">Monuments</string>
+    <string name="backwaters">Backwaters</string>
+    <string name="beaches">Beaches</string>
+    <string name="image">image</string>
+    <string name="hill_stations">Hill stations</string>
+</resources>

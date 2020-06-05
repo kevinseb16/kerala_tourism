@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/monumentfragment"
+        android:title="@string/monuments" />
+    <item
+        android:id="@+id/beachesfragment"
+        android:title="@string/beaches" />
+    <item
+        android:id="@+id/backwatersfragment"
+        android:title="@string/backwaters" />
+    <item
+        android:id="@+id/hillfragment"
+        android:title="@string/hill_stations" />
+</menu>
